@@ -14,4 +14,8 @@ The next step after installing ZEEK is to install Java on the system for ELK/Ela
 
 After this, get the respective components of ELK installed, Elasticsearch, LogStash, and Kibana, onto the system
 
-First to be installed will be ElasticSearch
+First to be installed will be Elasticsearch by running the following command in the picture  
+![image](https://github.com/JWT890/Zeek-ELK-Stack-Lab/assets/95875505/a4e40ae0-315c-4844-9497-e33583d606b3)
+After downloading the .gz file, you will want to open it by running the tar -xzf command to open it
+![image](https://github.com/JWT890/Zeek-ELK-Stack-Lab/assets/95875505/d9e2b6a5-d18e-4aa4-bfa4-abef56910bc1)  
+Then run the cd elasticsearch-8.13.0/ command to check to see if things ran smoothly
