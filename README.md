@@ -20,6 +20,13 @@ First will come the Elasticsearch repository, which the command entered in:
 Then for GPG keys: 
 ![image](https://github.com/user-attachments/assets/00fd235f-41d0-455a-990b-4a401c9204e9)
 
+Then for Elasticsearch:
+![image](https://github.com/user-attachments/assets/569bc2ae-8c57-4e59-b023-0265bcab2313)
+Which will install Elasticsearch, write down the password for superuser and write down any more notes as needed
+
+Then go and edit the elasticsearch.yml file and add in network host and port address with the command
+![image](https://github.com/user-attachments/assets/be6b597c-6134-4c9c-93c4-df04c3831220)
+![image](https://github.com/user-attachments/assets/8f064e21-8fd3-43fa-be41-c755ff978a23)
 
 
 
