@@ -28,5 +28,14 @@ Then go and edit the elasticsearch.yml file and add in network host and port add
 ![image](https://github.com/user-attachments/assets/be6b597c-6134-4c9c-93c4-df04c3831220)
 ![image](https://github.com/user-attachments/assets/8f064e21-8fd3-43fa-be41-c755ff978a23)
 
+Then enter the commands to start and enable elasticsearch
+![image](https://github.com/user-attachments/assets/17dc374a-b5e5-4f2b-9cc9-bd8a9da75294)
+
+Next install Logstash
+![image](https://github.com/user-attachments/assets/a348b546-2c0c-41f8-a108-ff2e98974b32)
+
+Then Kibana
+![image](https://github.com/user-attachments/assets/b9731adc-9867-41f7-8612-e8a478f1c959)
+
 
 
