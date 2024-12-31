@@ -32,10 +32,14 @@ Then enter the commands to start and enable elasticsearch
 ![image](https://github.com/user-attachments/assets/17dc374a-b5e5-4f2b-9cc9-bd8a9da75294)
 
 Next install Logstash
+
 ![image](https://github.com/user-attachments/assets/a348b546-2c0c-41f8-a108-ff2e98974b32)
 
 Then Kibana
+
 ![image](https://github.com/user-attachments/assets/b9731adc-9867-41f7-8612-e8a478f1c959)
 
+Next type the command sudo nano /etc/kibana/kibana.yml and uncomment server host and elasticsearch.hosts
 
+Next install Zeek by typing sudo apt-get install zeek *Note might have to install CMake/cmake as needed*
 
