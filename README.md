@@ -8,9 +8,9 @@ First step is to set up a set up a network for the VMs to communicate with each 
 For the network go to file or tools and go to the host only network networks section and click on create which will create a new network for this home lab. Take note of the IPv4 address and mask for later and click to enable DHCP server. Additionally, create a NATNetworkforInternet for the NAT Network as indeeded for Internet purposes.  
 
 Second step is to create the VMs needed for the Lab: ELK, Zeek, and Client. For ELK you will need a Ubuntu Server instance along with Zeek, for the Client you will need a Kali Linux VM.  
-Elastic Stack VM: 128 MB of Video Memory, Ubuntu Server 24 iso, Base Memory of 8192 MB, adapter 1 to the Nat Network created, and adapter 2 to the created host-only adapter.  
-Zeek Sensor VM: 128 MB of Video Memory, Unbuntu Server 24 iso, Base Memory of 4096 MB, adpater 1 to the Nat Network created, and adapter 2 is to the created host-only adpater. For adapter 2, set promiscuous mode to allow all.  
-Clinet VM: 128 MB of Video Memory, Kali Linux iso, Base Memory of 4096 MB, adapter 1 to the Host-Only Network created, and adapter 2 to the Nat Network created.  
+Elastic Stack VM: 128 MB of Video Memory, Ubuntu Server 24 iso, Base Memory of 8192 MB, adapter 1 to the Nat Network created, and adapter 2 to the created host-only adapter. For hard disk do 50 or more gigs.  
+Zeek Sensor VM: 128 MB of Video Memory, Unbuntu Server 24 iso, Base Memory of 4096 MB, adpater 1 to the Nat Network created, and adapter 2 is to the created host-only adpater. For adapter 2, set promiscuous mode to allow all. For hard disk do 30 gigs.  
+Clinet VM: 128 MB of Video Memory, Kali Linux iso, Base Memory of 4096 MB, adapter 1 to the Host-Only Network created, and adapter 2 to the Nat Network created. For hard disk do 40 or so gigs.  
 
 
 
