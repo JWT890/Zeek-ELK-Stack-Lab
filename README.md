@@ -7,42 +7,5 @@ Network security monitoring is a vital conponent of defending against attacks an
 First step is to set up a set up a network for the VMs to communicate with each other. For this its recommended to set up 2 or 3 VMs to fully do what is recommended, one for Zeek, one for Elastic Stack functions, and the Client VM.  
 For the network go to file or tools and go to the host only network networks section and click on create which will create a new network for this home lab. Take note of the IPv4 address and mask for later and click to enable DHCP server. Additionally, create a NATNetworkforInternet for the NAT Network as indeeded for Internet purposes.  
 
-AFter getting the VM up, it will be time to install the first component of the lab, ZEEK, by typing the sudo apt install zeek command  
-![image](https://github.com/JWT890/Zeek-ELK-Stack-Lab/assets/95875505/d4f5086c-7996-4572-afde-9a041751db46)  
 
-The next step after installing ZEEK is to install Java on the system for ELK/Elastic to function by typing the sudo apt install openjdk-11-jre openjdk-17-jre apt-transport-https command or vice versa with one of the pictures 
-![image](https://github.com/JWT890/Zeek-ELK-Stack-Lab/assets/95875505/7de91eb4-c90b-43c4-8917-36039d0bb9fc)  
-![image](https://github.com/JWT890/Zeek-ELK-Stack-Lab/assets/95875505/511e3990-0941-45c4-b56a-c61f9d92680f)  
-
-
-After this, get the respective components of ELK installed, Elasticsearch, LogStash, and Kibana, onto the system
-
-First will come the Elasticsearch repository, which the command entered in:
-![image](https://github.com/user-attachments/assets/877e7768-cf3f-4249-801a-2f01e83f8477)
-
-Then for GPG keys: 
-![image](https://github.com/user-attachments/assets/00fd235f-41d0-455a-990b-4a401c9204e9)
-
-Then for Elasticsearch:
-![image](https://github.com/user-attachments/assets/569bc2ae-8c57-4e59-b023-0265bcab2313)
-Which will install Elasticsearch, write down the password for superuser and write down any more notes as needed
-
-Then go and edit the elasticsearch.yml file and add in network host and port address with the command
-![image](https://github.com/user-attachments/assets/be6b597c-6134-4c9c-93c4-df04c3831220)
-![image](https://github.com/user-attachments/assets/8f064e21-8fd3-43fa-be41-c755ff978a23)
-
-Then enter the commands to start and enable elasticsearch
-![image](https://github.com/user-attachments/assets/17dc374a-b5e5-4f2b-9cc9-bd8a9da75294)
-
-Next install Logstash
-
-![image](https://github.com/user-attachments/assets/a348b546-2c0c-41f8-a108-ff2e98974b32)
-
-Then Kibana
-
-![image](https://github.com/user-attachments/assets/b9731adc-9867-41f7-8612-e8a478f1c959)
-
-Next type the command sudo nano /etc/kibana/kibana.yml and uncomment server host and elasticsearch.hosts
-
-Next install Zeek by typing sudo apt-get install zeek *Note might have to install CMake/cmake as needed*
 
