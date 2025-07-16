@@ -19,5 +19,10 @@ What Ubuntu Server is supposed to look after installation:
 If you installed OpenSSH after installation, just type sudo systemctl apt install openssh on both Ubuntu Servers and type sudo systemctl enable ssh to enable openssh on both servers.  
 
 Third step is installing Elasticsearch on the Elastic Stack VM.  
-First you will want to do sudo apt update && sudo apt upgrade -y. After updating you will want to import the GPG key using the command: wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
-  
+First you will want to do sudo apt update && sudo apt upgrade -y. After updating you will want to import the GPG key using the command: wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg  
+Next you will want to run the command: echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list tp add the Elastic repo for use.  
+Then run the sudo apt-get install apt-transport-https command.  
+Then comes installing ElasticSeach by running the command: sudo apt-get update && sudo apt-get install elasticsearch. After installation you will given the password for the super user account which should be written down.  
+This is the screen that will be greeted with:  
+  <img width="1185" height="522" alt="image" src="https://github.com/user-attachments/assets/a6082849-444b-499f-917d-78281d779210" />  
+
