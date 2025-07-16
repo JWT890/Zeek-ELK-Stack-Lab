@@ -25,4 +25,9 @@ Then run the sudo apt-get install apt-transport-https command.
 Then comes installing ElasticSeach by running the command: sudo apt-get update && sudo apt-get install elasticsearch. After installation you will given the password for the super user account which should be written down.  
 This is the screen that will be greeted with:  
   <img width="1185" height="522" alt="image" src="https://github.com/user-attachments/assets/a6082849-444b-499f-917d-78281d779210" />  
-
+Then run the commands: sudo systemctl enable elasticsearch.service and sudo systemctl start elasticsearch.service to get elasticsearch running on the VM.  
+Next go and edit /etc/elasticsearch/elasticsearch.yml and change the network host to 0.0.0.0 and http.port to 9200  
+Should look like this:  
+<img width="1286" height="803" alt="image" src="https://github.com/user-attachments/assets/cf2a649d-f077-4261-85c9-da016ce3cd65" />  
+Part 2 of the third step is installing Kibana on the Elastic Stack VM.  
+First will you want to run the command sudo apt install kibana -y to get it installed on the VM.  
