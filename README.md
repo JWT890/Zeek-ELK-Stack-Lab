@@ -12,5 +12,7 @@ Elastic Stack VM: 128 MB of Video Memory, Ubuntu Server 24 iso, Base Memory of 8
 Zeek Sensor VM: 128 MB of Video Memory, Unbuntu Server 24 iso, Base Memory of 4096 MB, adpater 1 to the Nat Network created, and adapter 2 is to the created host-only adpater. For adapter 2, set promiscuous mode to allow all. For hard disk do 30 gigs.  
 Clinet VM: 128 MB of Video Memory, Kali Linux iso, Base Memory of 4096 MB, adapter 1 to the Host-Only Network created, and adapter 2 to the Nat Network created. For hard disk do 40 or so gigs.  
 
-After getting everything set up for all 3 VMs, then its time to start installing the things needed for the lab, Elasticsearch, Kibana, Zeek, and getting everything talking to each other to continue.  
+After getting everything set up for all 3 VMs, then its time to start installing the things needed for the lab, Elasticsearch, Kibana, Zeek, and getting everything talking to each other to continue. Make sure to also install OpenSSH during the process or after setup.  
+What Ubuntu Server is supposed to look after installation:  
+<img width="1278" height="798" alt="image" src="https://github.com/user-attachments/assets/2d3e68ae-6d56-400b-a3ac-3d6abec5ad3d" />
 
