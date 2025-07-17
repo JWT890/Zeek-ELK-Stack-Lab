@@ -1,6 +1,7 @@
 # Zeek-ELK-Stack-Lab
 
 *Finishing this and updating this now since in possession of a more powerful computer to handle home lab*  
+Used some from this link: https://www.linkedin.com/posts/navmukadam_zeek-elk-stack-lab-activity-7307517445810847746-NmPD/  
 
 Network security monitoring is a vital conponent of defending against attacks and being looking for suspcious or unusual activity on a network. Tools such as Splunk, ZEEK, Elastic Stack/ELK Stack, Security Onion, Wireshark, and a few others help out with the network monitoring in light of this effort. For the purpose of this lab, ZEEK and Elastic/ELK will be used to monitor network traffic and get reports back from it. ZEEK can be used for the dual purpose of an Intrusion Detection System or IDS and a network security monitor. Elastic Stack provides a wide range of capabilities suh as logging, analytical data, observation, SIEM, and much more. Using the combination of these two in a lab can showcase how powerful and useful they can be towards conducting monitoring on a network for suspicious activity and more.
 
@@ -33,5 +34,5 @@ Part 2 of the third step is installing Kibana on the Elastic Stack VM.
 First will you want to run the command sudo apt install kibana -y to get it installed on the VM.  
 Next you will want to run the sudo nano /etc/kibana/kibana.yml and modify it by uncommenting a couple parts like below:  
 <img width="1281" height="801" alt="image" src="https://github.com/user-attachments/assets/87ea022c-f7e4-4c3c-85ca-11a824a3ef31" />  
-
-
+Then run the commands sudo systemctl start kibana and sudo systemctl enable kibana to get kibana up and running. 
+Next you will need to connect Kibana to Elasticsearch, start by running this command: sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana.  
