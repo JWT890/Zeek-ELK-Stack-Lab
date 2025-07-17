@@ -31,3 +31,7 @@ Should look like this:
 <img width="1286" height="803" alt="image" src="https://github.com/user-attachments/assets/cf2a649d-f077-4261-85c9-da016ce3cd65" />  
 Part 2 of the third step is installing Kibana on the Elastic Stack VM.  
 First will you want to run the command sudo apt install kibana -y to get it installed on the VM.  
+Next you will want to run the sudo nano /etc/kibana/kibana.yml and modify it by uncommenting a couple parts like below:  
+<img width="1281" height="801" alt="image" src="https://github.com/user-attachments/assets/87ea022c-f7e4-4c3c-85ca-11a824a3ef31" />  
+
+
