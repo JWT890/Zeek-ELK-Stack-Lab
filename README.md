@@ -38,6 +38,6 @@ Next you will want to run the sudo nano /etc/kibana/kibana.yml and modify it by 
 Then run the commands sudo systemctl start kibana and sudo systemctl enable kibana to get kibana up and running. 
 Next you will need to connect Kibana to Elasticsearch, start by running this command: sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana.  
 Make sure to copy and paste for the next command: sudo /usr/share/kibana/bin/kibana-setup --enrollment-token <paste_the_token_here>  
-After running you should see this: 
+After running you should see this:  
 <img width="618" height="94" alt="image" src="https://github.com/user-attachments/assets/45cd4363-f20c-4deb-b9ad-8c5baf61b85e" />  
 
