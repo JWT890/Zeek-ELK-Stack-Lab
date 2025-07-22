@@ -41,13 +41,13 @@ Make sure to copy and paste for the next command: sudo /usr/share/kibana/bin/kib
 After running you should see this:  
 <img width="618" height="94" alt="image" src="https://github.com/user-attachments/assets/45cd4363-f20c-4deb-b9ad-8c5baf61b85e" />  
 *Note you might have to run this command on the Elastic Stack VM to access a more graphical outline:  
-# For XFCE
+For XFCE
 sudo apt install xubuntu-desktop -y 
-# Or for a more minimal XFCE install
-# sudo apt install xfce4 lightdm -y 
+Or for a more minimal XFCE install
+sudo apt install xfce4 lightdm -y 
 
-# Install Firefox or Chromium
+Install Firefox or Chromium
 sudo apt install firefox -y 
-# or 
-# sudo apt install chromium-browser -y  
+or 
+sudo apt install chromium-browser -y  
 and run sudo reboot to be able to access*  
