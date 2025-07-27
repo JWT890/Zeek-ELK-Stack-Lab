@@ -51,3 +51,10 @@ sudo apt install firefox -y
 or 
 sudo apt install chromium-browser -y  
 and run sudo reboot to be able to access*  
+What it looks like on logon screen:  
+<img width="1283" height="791" alt="image" src="https://github.com/user-attachments/assets/14936e63-d9db-4048-8d72-bd0650928d44" />  
+And after logging in: 
+<img width="1273" height="793" alt="image" src="https://github.com/user-attachments/assets/f040ecb4-07b9-4daa-b447-73e7108ec3f5" />  
+
+
+
