@@ -56,5 +56,21 @@ What it looks like on logon screen:
 And after logging in: 
 <img width="1273" height="793" alt="image" src="https://github.com/user-attachments/assets/f040ecb4-07b9-4daa-b447-73e7108ec3f5" />  
 
+Fourth step is getting Zeek installed on the Zeek-Sensor VM with the command sudo apt update && sudo apt upgrade -y.  
+Commands to install Zeek: sudo apt install -y cmake make gcc g++ flex bison libpcap-dev libssl-dev python3-dev swig zlib1g-dev libmaxminddb-dev libcurl4-openssl-dev.  
+cd /opt
+sudo git clone --recursive https://github.com/zeek/zeek
+cd zeek
+sudo ./configure
+sudo make
+sudo make install
+To successfully install cmake:  
+sudo apt update
+sudo apt install nodejs npm  
+sudo apt install libnode-dev  
+sudo apt install libzmq3-dev  
+
+
+
 
 
