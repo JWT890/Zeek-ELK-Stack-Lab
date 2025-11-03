@@ -16,6 +16,8 @@ After getting everything set up for all 2 VMs, then its time to start installing
 What Ubuntu Server is supposed to look after installation:  
 <img width="1278" height="798" alt="image" src="https://github.com/user-attachments/assets/2d3e68ae-6d56-400b-a3ac-3d6abec5ad3d" />  
 
+To install openssh-server, type sudo apt install openssh-server and install it.  
+
 If you installed OpenSSH after installation, just type sudo systemctl apt install openssh on both Ubuntu Servers and type sudo systemctl enable ssh to enable openssh on both servers.  
 
 Third step is installing Elasticsearch on the Elastic Stack VM.  
