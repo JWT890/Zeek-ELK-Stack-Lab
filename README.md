@@ -18,7 +18,11 @@ What Ubuntu Server is supposed to look after installation:
 
 To install openssh-server, type sudo apt install openssh-server and install it.  
 
-If you installed OpenSSH after installation, just type sudo systemctl apt install openssh on both Ubuntu Servers and type sudo systemctl enable ssh to enable openssh on both servers.  
+If you installed OpenSSH after installation, just type sudo systemctl apt install openssh on both Ubuntu Servers and type sudo systemctl enable ssh to enable openssh on both servers. 
+
+Before this you will need to set a static IP. Type ip a in the command line to get the network ips, notice that enp0s8 needs a static ip. Type sudo nano /etc/netplan/01-netcfg.yaml and enter this in:  
+<img width="854" height="464" alt="image" src="https://github.com/user-attachments/assets/7ae68063-4623-416a-960c-29ad55590ccf" />  
+Then save the file and next type in the command line: sudo netplan apply and then ip a to see the new network static network configuration.  
 
 Third step is installing Elasticsearch on the Elastic Stack VM.  
 First you will want to do sudo apt update && sudo apt upgrade -y. After updating you will want to import the GPG key using the command: wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg  
