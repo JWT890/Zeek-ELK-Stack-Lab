@@ -76,7 +76,23 @@ sudo apt update, then sudo sudo apt install libzmq3-dev, then sudo apt install l
 Within zeek folder run:  
 make
 *Note this might take 4-5 hours or so to do so wait or go do something else*
-sudo make install
+sudo make install  
+
+Then type nano ~/.bashrc and scroll all the way down to the file and put:  
+export PATH=/usr/local/zeek/bin:$PATH  
+export ZEEKPATH=/usr/local/zeek/share/zeek:/usr/local/zeek/share/zeek/policy:/usr/local/zeek/share/zeek/site  
+Then save the file. If that doesn't work then try these steps:  
+echo 'deb http://download.opensuse.org/repositories/security:/zeek/xUbuntu_24.04/ /' | sudo tee /etc/apt/sources.list.d/security:zeek.list   
+curl -fsSL https://download.opensuse.org/repositories/security:zeek/xUbuntu_24.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/security_zeek.gpg > /dev/null  
+sudo apt update  
+sudo apt install zeek -y  
+echo "export PATH=/opt/zeek/bin:$PATH" >> ~/.bashrc  
+source ~/.bashrc  
+Then see if zeek is installed:  
+which zeek  
+zeek --version  
+Then type sudo nano /opt/zeek/etc/node.cfg  
+
 To successfully install cmake:  
 sudo apt update
 sudo apt install nodejs npm  
