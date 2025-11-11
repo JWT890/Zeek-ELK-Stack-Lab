@@ -67,9 +67,14 @@ Fourth step is getting Zeek installed on the Elastic Stack VM with the command s
 Commands to install Zeek: sudo apt install -y cmake make gcc g++ flex bison libpcap-dev libssl-dev python3-dev swig zlib1g-dev libmaxminddb-dev libcurl4-openssl-dev.  
 cd /opt
 sudo git clone --recursive https://github.com/zeek/zeek
-cd zeek
-sudo ./configure
-sudo make
+cd zeek  
+./configure  
+
+To resolve the error that happens run:  
+sudo apt update, then sudo sudo apt install libzmq3-dev, then sudo apt install libcmzq-dev  
+
+Within zeek folder run:  
+make
 sudo make install
 To successfully install cmake:  
 sudo apt update
