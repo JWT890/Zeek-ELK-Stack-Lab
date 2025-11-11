@@ -75,6 +75,7 @@ sudo apt update, then sudo sudo apt install libzmq3-dev, then sudo apt install l
 
 Within zeek folder run:  
 make
+*Note this might take 4-5 hours or so to do so wait or go do something else*
 sudo make install
 To successfully install cmake:  
 sudo apt update
