@@ -92,6 +92,10 @@ Then see if zeek is installed:
 which zeek  
 zeek --version  
 Then type sudo nano /opt/zeek/etc/node.cfg  
+In the file make sure to change interface to enps0s8  
+<img width="1240" height="410" alt="image" src="https://github.com/user-attachments/assets/349bf11d-2eb0-44a9-a66f-e7ad28da8951" />  
+Then type sudo /opt/zeek/bin/zeekctl stop to see if zeek is running, then type sudo nano /opt/zeek/share/zeek/site/local.zeek and put @load policy/tuning/json-logs.zeek at the bottom.  
+
 
 To successfully install cmake:  
 sudo apt update
