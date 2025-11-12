@@ -108,8 +108,8 @@ And save the password for later, then go to Kibana's website based off your VM's
 After pasting the enrollment token, go back to the command line and cd /usr/share/kibana, hit enter, and type sudo bin/kibana-verification-code and get the verificaton code to put in after pasting the enrollment key.  
 You will be then greeted by this screen: 
 <img width="1277" height="686" alt="image" src="https://github.com/user-attachments/assets/5ac242bf-a9ac-4136-8e23-79f05a7cd310" />  
-For user type elastic and for password put the password you saved for it earlier in there: 
-<img width="1277" height="686" alt="image" src="https://github.com/user-attachments/assets/19302d24-3030-4238-9aab-45b84a676afa" />
+For user type elastic and for password put the password you saved for it earlier in there and you will be greeted by this screen:   
+<img width="1291" height="686" alt="image" src="https://github.com/user-attachments/assets/ab8b2181-ab3e-49c4-bbc8-95205f824bd4" />  
 
 
 
