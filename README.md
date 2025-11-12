@@ -2,6 +2,7 @@
 
 *Finishing this and updating this now since in possession of a more powerful computer to handle home lab*  
 Used some from this link: https://www.linkedin.com/posts/navmukadam_zeek-elk-stack-lab-activity-7307517445810847746-NmPD/  
+Some steps for installing Zeek: https://medium.com/@afnanbinhaque/install-and-run-zeek-network-monitoring-tool-on-ubuntu-22-04-ad49e12ef781  
 
 Network security monitoring is a vital conponent of defending against attacks and being looking for suspcious or unusual activity on a network. Tools such as Splunk, ZEEK, Elastic Stack/ELK Stack, Security Onion, Wireshark, and a few others help out with the network monitoring in light of this effort. For the purpose of this lab, ZEEK and Elastic/ELK will be used to monitor network traffic and get reports back from it. ZEEK can be used for the dual purpose of an Intrusion Detection System or IDS and a network security monitor. Elastic Stack provides a wide range of capabilities suh as logging, analytical data, observation, SIEM, and much more. Using the combination of these two in a lab can showcase how powerful and useful they can be towards conducting monitoring on a network for suspicious activity and more.
 
@@ -96,12 +97,14 @@ In the file make sure to change interface to enps0s8
 <img width="1240" height="410" alt="image" src="https://github.com/user-attachments/assets/349bf11d-2eb0-44a9-a66f-e7ad28da8951" />  
 Then type sudo /opt/zeek/bin/zeekctl stop to see if zeek is running, then type sudo nano /opt/zeek/share/zeek/site/local.zeek and put @load policy/tuning/json-logs.zeek at the bottom.  
 
+Then to deply Zeek type sudo /opt/zeek/bin/current check to if its running, then sudo /opt/zeek/bin/zeekctl deploy to start it, then sudo /opt/zeek/bin/zeekctl status to check for the run status.  
 
-To successfully install cmake:  
-sudo apt update
-sudo apt install nodejs npm  
-sudo apt install libnode-dev  
-sudo apt install libzmq3-dev  
+Fifth step is to install Kibana on the VM  
+First run the command curl -k -u elastic:[password] "https://localhost:9200/?pretty" with your password for Elastic to verify Elasticsearch, then run the command sudo apt install kibana -y  
+Then run sudo nano /etc/kibana/kibana.yml and check to see if server.host says "0.0.0.0"  
+Then run sudo systemctl start kibana along with enable, then run the command: sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token --scope kibana  
+And save the password for later, then go to Kibana's website based off your VM's IP address, so http://ipaddress:5601 and hit enter and you will be greeted by this screen:  
+<img width="1275" height="681" alt="image" src="https://github.com/user-attachments/assets/5ca0e757-f342-4c5f-86f3-9849064a2855" />  
 
 
 
