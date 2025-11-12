@@ -105,6 +105,11 @@ Then run sudo nano /etc/kibana/kibana.yml and check to see if server.host says "
 Then run sudo systemctl start kibana along with enable, then run the command: sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token --scope kibana  
 And save the password for later, then go to Kibana's website based off your VM's IP address, so http://ipaddress:5601 and hit enter and you will be greeted by this screen:  
 <img width="1275" height="681" alt="image" src="https://github.com/user-attachments/assets/5ca0e757-f342-4c5f-86f3-9849064a2855" />  
+After pasting the enrollment token, go back to the command line and cd /usr/share/kibana, hit enter, and type sudo bin/kibana-verification-code and get the verificaton code to put in after pasting the enrollment key.  
+You will be then greeted by this screen: 
+<img width="1277" height="686" alt="image" src="https://github.com/user-attachments/assets/5ac242bf-a9ac-4136-8e23-79f05a7cd310" />  
+For user type elastic and for password put the password you saved for it earlier in there: 
+<img width="1277" height="686" alt="image" src="https://github.com/user-attachments/assets/19302d24-3030-4238-9aab-45b84a676afa" />
 
 
 
