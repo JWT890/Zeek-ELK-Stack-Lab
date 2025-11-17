@@ -136,7 +136,7 @@ setup.kibana:
   host: "<kibana_url>"
 
 Then run the command sudo /opt/zeek/bin/zeekctl stop. Then run cd /opt/zeek/share/zeek/site and nano local.zeek  
-Then go to /etc/filebeat/modules.d and sudo nano zeek.yml and make sure some logs are enabled like below:  
+Then go to /etc/filebeat/modules.d and sudo nano zeek.yml and make sure all logs are enabled like below for a good example:  
 - module: zeek  
   connection:  
     enabled: true  
@@ -152,7 +152,7 @@ Then go to /etc/filebeat/modules.d and sudo nano zeek.yml and make sure some log
     var.paths: ["/opt/zeek/logs/current/ssh.log"]  
   ssl:  
     enabled: true  
-    var.paths: ["/opt/zeek/logs/current/ssl.log"]
+    var.paths: ["/opt/zeek/logs/current/ssl.log"]  
 
 
 
