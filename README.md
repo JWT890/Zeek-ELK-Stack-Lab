@@ -115,7 +115,11 @@ Next you will want to add Zeek as a integration. Click on Add Integration, then 
 <img width="265" height="151" alt="image" src="https://github.com/user-attachments/assets/ff54c2da-b3b7-41fa-afbb-a97d89b096e1" />  
 Then its time to go through the installation steps to install Filebeat.  
 <img width="1245" height="590" alt="image" src="https://github.com/user-attachments/assets/b49f0274-239d-4aa9-a28f-d8fc97fac13a" />  
-First 
+First run the command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.19.7-darwin-x86_64.tar.gz. Then run: sudo dpkg -i filebeat-8.17.0-amd64.deb.  
+Then run to get the fingerprint: sudo openssl x509 -fingerprint -sha256 -noout -in /etc/elasticsearch/certs/http_ca.crt.  
+
+
+
 
 
 
