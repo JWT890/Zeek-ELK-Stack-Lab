@@ -111,6 +111,13 @@ You will be then greeted by this screen:
 <img width="1277" height="686" alt="image" src="https://github.com/user-attachments/assets/5ac242bf-a9ac-4136-8e23-79f05a7cd310" />  
 For user type elastic and for password put the password you saved for it earlier in there and you will be greeted by this screen:   
 <img width="1291" height="686" alt="image" src="https://github.com/user-attachments/assets/ab8b2181-ab3e-49c4-bbc8-95205f824bd4" />  
+Next you will want to add Zeek as a integration. Click on Add Integration, then find the bar for integration and search Zeek, click on Zeek and  scroll down till you see, also available in beats:  
+<img width="265" height="151" alt="image" src="https://github.com/user-attachments/assets/ff54c2da-b3b7-41fa-afbb-a97d89b096e1" />  
+Then its time to go through the installation steps to install Filebeat.  
+<img width="1245" height="590" alt="image" src="https://github.com/user-attachments/assets/b49f0274-239d-4aa9-a28f-d8fc97fac13a" />  
+First 
+
+
 
 
 
