@@ -117,6 +117,24 @@ Then its time to go through the installation steps to install Filebeat.
 <img width="1245" height="590" alt="image" src="https://github.com/user-attachments/assets/b49f0274-239d-4aa9-a28f-d8fc97fac13a" />  
 First run the command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.19.7-darwin-x86_64.tar.gz. Then run: sudo dpkg -i filebeat-8.17.0-amd64.deb.  
 Then run to get the fingerprint: sudo openssl x509 -fingerprint -sha256 -noout -in /etc/elasticsearch/certs/http_ca.crt.  
+Then type: sudo nano /etc/filebeat/filebeat.yml and hit enter to edit the filebeat yml file.  
+And add this with your respective information:  
+filebeat.inputs:
+- type: log
+  paths:
+/opt/zeek/logs/current/*.log
+  fields:
+       Log_type: zeek
+  fields_under_root: true
+output.elasticsearch:
+  hosts: ["<es_url>"]
+  username: "elastic"
+  password: "<password>"
+  # If using Elasticsearch's default certificate
+  ssl.ca_trusted_fingerprint: "<es cert fingerprint>"
+setup.kibana:
+  host: "<kibana_url>"
+
 
 
 
