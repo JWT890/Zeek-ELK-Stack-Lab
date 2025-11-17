@@ -119,21 +119,41 @@ First run the command: curl -L -O https://artifacts.elastic.co/downloads/beats/f
 Then run to get the fingerprint: sudo openssl x509 -fingerprint -sha256 -noout -in /etc/elasticsearch/certs/http_ca.crt.  
 Then type: sudo nano /etc/filebeat/filebeat.yml and hit enter to edit the filebeat yml file.  
 And add this with your respective information:  
-filebeat.inputs:
-- type: log
-  paths:
-/opt/zeek/logs/current/*.log
-  fields:
-       Log_type: zeek
-  fields_under_root: true
-output.elasticsearch:
-  hosts: ["<es_url>"]
-  username: "elastic"
-  password: "<password>"
-  # If using Elasticsearch's default certificate
-  ssl.ca_trusted_fingerprint: "<es cert fingerprint>"
-setup.kibana:
+filebeat.inputs:  
+- type: log  
+  paths:  
+/opt/zeek/logs/current/*.log  
+  fields:  
+       Log_type: zeek  
+  fields_under_root: true  
+output.elasticsearch:  
+  hosts: ["<es_url>"]  
+  username: "elastic"  
+  password: "<password>"  
+  If using Elasticsearch's default certificate  
+  ssl.ca_trusted_fingerprint: "<es cert fingerprint>"  
+setup.kibana:  
   host: "<kibana_url>"
+
+Then run the command sudo /opt/zeek/bin/zeekctl stop. Then run cd /opt/zeek/share/zeek/site and nano local.zeek  
+Then go to /etc/filebeat/modules.d and sudo nano zeek.yml and make sure some logs are enabled like below:  
+- module: zeek  
+  connection:  
+    enabled: true  
+    var.paths: ["/opt/zeek/logs/current/conn.log"]  
+  dns:  
+    enabled: true  
+    var.paths: ["/opt/zeek/logs/current/dns.log"]  
+  http:  
+    enabled: true  
+    var.paths: ["/opt/zeek/logs/current/http.log"]  
+  ssh:  
+    enabled: true    
+    var.paths: ["/opt/zeek/logs/current/ssh.log"]  
+  ssl:  
+    enabled: true  
+    var.paths: ["/opt/zeek/logs/current/ssl.log"]
+
 
 
 
