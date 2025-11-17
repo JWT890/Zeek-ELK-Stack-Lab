@@ -1,5 +1,6 @@
 # Zeek-ELK-Stack-Lab
 
+*Got idea from this after meeting a guy from MITRE at a Elastic Stack workshop at Leidos*  
 *Finishing this and updating this now since in possession of a more powerful computer to handle home lab*  
 Used some from this link: https://www.linkedin.com/posts/navmukadam_zeek-elk-stack-lab-activity-7307517445810847746-NmPD/  
 Some steps for installing Zeek: https://medium.com/@afnanbinhaque/install-and-run-zeek-network-monitoring-tool-on-ubuntu-22-04-ad49e12ef781  
